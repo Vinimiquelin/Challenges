@@ -25,14 +25,12 @@
 
          void Move(){
              if(Input.GetKeyDown(KeyCode.LeftArrow)){
-                if(spriteRenderer != null)
-                    spriteRenderer.flipX = true;
+                spriteRenderer.flipX = true;
                 rigidbody2d.velocity = Vector2.left * walkVelocity;
              }
 
             if(Input.GetKeyDown(KeyCode.RightArrow)){
-                if(spriteRenderer != null)
-                    spriteRenderer.flipX = false;
+                spriteRenderer.flipX = false;
                 rigidbody2d.velocity = Vector2.right * walkVelocity;
              }
          }
