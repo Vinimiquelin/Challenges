@@ -221,7 +221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpVelocity: 5
-  walkVelocity: 3
+  flyVelocity: 12
+  moveVelocity: 3
   rigidbody2d: {fileID: 162493587}
   spriteRenderer: {fileID: 162493584}
 --- !u!50 &162493587
@@ -506,11 +507,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2182050772770768529, guid: 324588001d86252438e3aab211e8a81d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.77
+      value: 6.72
       objectReference: {fileID: 0}
     - target: {fileID: 2182050772770768529, guid: 324588001d86252438e3aab211e8a81d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.38
+      value: 2.47
       objectReference: {fileID: 0}
     - target: {fileID: 2182050772770768529, guid: 324588001d86252438e3aab211e8a81d, type: 3}
       propertyPath: m_LocalPosition.z
