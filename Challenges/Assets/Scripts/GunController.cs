@@ -13,6 +13,7 @@ public class GunController : MonoBehaviour
     [SerializeField] private float chargeTime;
     
     [SerializeField] private GameObject player;
+    [SerializeField] private float powerUpDuration = 8f;
     
     private bool isCharging;
 
@@ -24,6 +25,17 @@ public class GunController : MonoBehaviour
             Flip();
             Fire();
         }
+
+        if (firePoint.gameObject.activeSelf)
+        {
+            StartCoroutine(TurnOffPowerUp(powerUpDuration));
+        }
+    }
+    
+    IEnumerator TurnOffPowerUp(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        firePoint.gameObject.SetActive(false);
     }
 
     void Fire()

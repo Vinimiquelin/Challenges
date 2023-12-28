@@ -34,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
         {
             crouch = false;
         }
+        
+        if(Input.GetKey(KeyCode.Space))
+            OnFire(true);
+        else
+            OnFire(false);
     }
 
     public void OnLanding()
@@ -44,6 +49,11 @@ public class PlayerMovement : MonoBehaviour
     public void OnCrouching(bool isCrouching)
     { 
         animator.SetBool("isCrouching", isCrouching);    
+    }
+
+    public void OnFire(bool isFiring)
+    {
+        animator.SetBool("isFiring", isFiring);
     }
     
     private void FixedUpdate()

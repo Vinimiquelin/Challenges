@@ -1,8 +1,8 @@
  using UnityEngine;
  using System.Collections;
      
-     public class PlayerController : MonoBehaviour {
-
+     public class PlayerController : MonoBehaviour 
+     {
          [SerializeField] public float jumpVelocity = 5.0f;
          [SerializeField] public float walkVelocity = 3.0f;
          [SerializeField] private Rigidbody2D rigidbody2d;
