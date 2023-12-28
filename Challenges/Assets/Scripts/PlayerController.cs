@@ -31,17 +31,17 @@
 
          void Move(){
              if(Input.GetKeyDown(KeyCode.LeftArrow))
-             {
+             { 
                 spriteRenderer.flipX = true;
                 rigidbody2d.velocity = Vector2.left * walkVelocity;
                 animator.SetBool("iswalking", true);
              }
 
-            if(Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                spriteRenderer.flipX = false;
-                rigidbody2d.velocity = Vector2.right * walkVelocity;
-                animator.SetBool("iswalking", true);
+             if(Input.GetKeyDown(KeyCode.RightArrow))
+             {
+                 spriteRenderer.flipX = false;
+                 rigidbody2d.velocity = Vector2.right * walkVelocity;
+                 animator.SetBool("iswalking", true);
              }
          }
      }
